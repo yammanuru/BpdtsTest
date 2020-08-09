@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.GetUserDetailsTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.876 sec - in tests.GetUserDetailsTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.071 sec - in tests.GetUserDetailsTests

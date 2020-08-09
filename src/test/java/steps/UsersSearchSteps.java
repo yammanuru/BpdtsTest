@@ -36,6 +36,6 @@ public class UsersSearchSteps {
         ArrayList<Map<String, ?>> jsonAsArrayList = from(jsonAsString).get("");
         return jsonAsArrayList;
     }
-
+        //end of tests
 
 }
