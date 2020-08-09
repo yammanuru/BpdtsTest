@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Get user details tests","Verify that we can find correct user by using city","SUCCESS","20:42:50","0.0","7.43"
-"Get user details tests","Verify total number of users","SUCCESS","20:42:57","0.0","1.02"
-"Get user details tests","Verify that we can find correct user by using id","SUCCESS","20:42:58","0.0","0.67"
-"Get user details tests","Check non existing id","SUCCESS","20:42:59","0.0","0.09"
