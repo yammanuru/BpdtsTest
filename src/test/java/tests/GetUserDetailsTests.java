@@ -30,6 +30,7 @@ public class GetUserDetailsTests {
     private Float longitude;
     private String city;
     private int citySearchId = 101;
+    private String invalidCity = "Derby123";
     @Steps
     UsersSearchSteps usersSearchSteps;
 
@@ -110,5 +111,11 @@ public class GetUserDetailsTests {
         userByCityResponse.then().assertThat().body("latitude", Matchers.hasItem(latitude));
         userByCityResponse.then().assertThat().body("longitude", Matchers.hasItem(longitude));
 
+    }
+    @Test
+    public void VerifyNoErrorWhenSearchWithCityWhereUserNotBelongsToCity(){
+        userByCityResponse = usersSearchSteps.searchUserByCity(invalidCity);
+        userByCityResponse.then().statusCode(200);
+        userByCityResponse.then().assertThat().body("isEmpty()",Matchers.is(true));
     }
 }
